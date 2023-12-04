@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "C:/src/Movies-App/linux",
+    "dotnet.defaultSolution": "build/windows/movies_app.sln"
+}
