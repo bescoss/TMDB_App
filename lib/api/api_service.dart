@@ -59,6 +59,25 @@ class ApiService {
     }
   }
 
+  static Future<List<Actor_id>?> getCastFromMovie(Movie movie) async {
+    Future<List<Actor_id>?> actorId;
+    List<Actor> actors = [];
+    try {
+      http.Response response = await http.get(Uri.parse(
+          '${Api.baseUrl}movie/${movie.id}/credits?api_key=${Api.apiKey}&language=en-US&page=1'));
+      var res = jsonDecode(response.body);
+      res['cast'].take(20).forEach(
+            (m) => actors.add(
+              Actor.fromMap(m),
+            ),
+          );
+      actorId = getCustomActors(actors);
+      return actorId;
+    } catch (e) {
+      return null;
+    }
+  }
+
   static Future<List<Actor>?> getTrendingActors() async {
     List<Actor> actors = [];
     try {

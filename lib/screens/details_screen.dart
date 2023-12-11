@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:movies_app/api/api.dart';
 import 'package:movies_app/api/api_service.dart';
 import 'package:movies_app/controllers/movies_controller.dart';
+import 'package:movies_app/widgets/actor_tab_builder.dart';
 
 import 'package:movies_app/models/movie.dart';
 import 'package:movies_app/models/review.dart';
@@ -331,7 +332,9 @@ class DetailsScreen extends StatelessWidget {
                               }
                             },
                           ),
-                          Container(),
+                          ActorTabBuilder(
+                            future: ApiService.getCastFromMovie(movie),
+                          ),
                         ]),
                       ),
                     ],
