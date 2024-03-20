@@ -30,5 +30,5 @@ first you should register an account in tmdb website and get an apikey. then rep
 - flutter pub get
 - flutter run
 ```
-
+Finally add your [TMDB](https://www.themoviedb.org/) Api in: 'lib/api/api.dart'
 enjoy!
