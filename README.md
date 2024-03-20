@@ -1,6 +1,6 @@
 # Movies App
 
-A Full-featured movies app built with help of flutter and TMDB api :)
+A Full-featured Movies and Actors app built with help of flutter and TMDB api :)
 
 
 # Preview:
@@ -14,10 +14,11 @@ A Full-featured movies app built with help of flutter and TMDB api :)
 
 ## Features:
 
+- TMDB Api integration.
 - get trending, popular, now playing and ... movies.
 - save movies in watchlist to watch another time.
-- search among 794,271 movies.
-- get movies details, reviews and etc.
+- search among 794,271 movies and numerous actors.
+- get movies details, reviews, Cast and etc.
 
 
 ## Installation:
@@ -31,5 +32,3 @@ first you should register an account in tmdb website and get an apikey. then rep
 ```
 
 enjoy!
-
-Design source: https://www.figma.com/file/T6Xewwh7oZQ9jlPgdsX3MM/Movies-app-(Community)
